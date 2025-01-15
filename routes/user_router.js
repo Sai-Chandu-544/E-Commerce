@@ -20,7 +20,7 @@ router.get("/homepage",(req,res)=>{
 router.get("/products",islogin,(req,res)=>{
     res.render("products")
 })
-router.get("/cart",(req,res)=>{
+router.get("/cart",islogin,(req,res)=>{
     res.render("cart")
 })
 
