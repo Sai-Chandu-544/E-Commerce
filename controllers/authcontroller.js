@@ -1,5 +1,5 @@
 const user_model=require("../models/user_model.js");
-const bcrypt=require("bcrypt");
+const bcryptjs=require("bcryptjs");
 const jwt=require("jsonwebtoken");
 const {generatetoken}=require("../utils/generatetoken");
 
@@ -11,7 +11,7 @@ module.exports.registeruser=async (req,res)=>{
         let user= await user_model.findOne({email:email})  
         if(user){res.status(401).send("You Already Have an Account Please Login")}
          else {
-              const hashedPassword = await bcrypt.hash(password, 10);
+              const hashedPassword = await bcryptjs.hash(password, 10);
               let user = await user_model.create({ username, email, password: hashedPassword })
             //   console.log(user.password)
             res.send("Registered Successfully")
@@ -36,7 +36,7 @@ try {
     if (!user) {
       res.send("You Don't have an Account, Please Register");
     } 
-      const result = await bcrypt.compare(password, user.password);
+      const result = await bcryptjs.compare(password, user.password);
       if (result) {
         let token = generatetoken(user);
         res.cookie("token", token);
