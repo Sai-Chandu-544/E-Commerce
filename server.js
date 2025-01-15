@@ -3,7 +3,7 @@ const app=express();
 const db=require("./configuration/mongoose_connection");
 const bcryptjs=require("bcryptjs");
 require("dotenv").config();
-const PORT=process.env.PORT || 3000;
+const PORT=process.env.PORT || 5000;
 
 // importing bodyparser and use of bodyparser
 const bodyparser=require("body-parser");
