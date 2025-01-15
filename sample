@@ -1,0 +1,24 @@
+1. USER MODEL
+   * Full Name - String
+   * Email- String
+   * Password - String
+   * Cart - String
+   * Is_Admin - String
+   * Orders - String
+   * Contact - Number
+   * Picture - db
+
+2. PRODUCT MODEL
+   * Image
+   * Name
+   * Price
+   * Discount
+   * Bg_Color
+   * Panel_Color
+   * Text_Color
+
+/-> signup or login
+/users/cart->cart
+/admin->admin Panel
+/owner/products->show all products
+/owner/products->show admin panel to create products

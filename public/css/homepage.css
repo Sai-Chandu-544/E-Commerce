@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body {
+    margin: 0;
+    height: 100vh; /* Ensure the body takes full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.image-container {
+    position:absolute;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Ensures the image scales properly */
+}
+.section1{
+    height: 15vh;
+    width:100vw;
+    /* background-color: rgb(255, 238, 230); */
+
+}
+.navbar{
+    position:fixed;
+    height: 75px;
+    width:100vw;
+    display: flex;
+    background-color:#ADD8E6;
+    box-shadow: 2px 4px 5px #FFA500;
+    z-index: 1;
+}
+.logo p{
+    height: 100px;
+    width: 50vw;
+    font-size: 30px;
+    font-family:sans-serif;
+    color: #FF4500;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-weight: 400;
+    text-shadow: 5px 5px 8px #FFA500;
+   
+}
+.navbar_items{
+    padding-right: 0px;
+    font-family: Okra, Helvetica, sans-serif;
+    margin-top:30px;
+    margin-left:100px;
+
+ }
+.navbar a{
+    font-size: 20px;
+    margin-right: 40px;
+    color:#FF6900;
+    font-weight: 520;
+    text-decoration: none;
+    position: relative;
+}
+.navbar a:hover{
+    color:yellow;
+    
+}
+@media (min-width:350px) and (max-width:1100px){
+    .body{
+        font-size:10px;
+    }
+    .navbar{
+        position:fixed;
+        height: 100px;
+        width:100%;
+        display: flex;
+        background-color:#ADD8E6;
+        box-shadow: 2px 4px 5px #FFA500;
+    }
+    
+    .logo p{
+        height: 20px;
+        width: 15vw;
+        font-size: 15px;
+        font-family:sans-serif;
+        color: #FF4500;
+        margin-top: 45px;
+        margin-left: 10px;
+        font-weight: bold;
+        text-shadow: 5px 5px 8px #FFA500;
+        text-wrap: nowrap;
+       
+    }
+    
+    .navbar a{
+        font-size: 10px;
+        margin-right: 9px;
+        color:#FF6900;
+        font-weight: 520;
+        text-decoration: none;
+        position: relative;
+    
+    }
+    .navbar_items{
+        display: flex;
+        justify-content: left;
+        text-wrap: nowrap;
+        width: 50px;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+}

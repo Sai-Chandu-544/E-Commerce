@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    height: 100vh; /* Ensure the body takes full viewport height */
+    width:100vw;
+    overflow:auto;
+}
+
+.section1{
+    width:100vw;
+    height:280px;
+    background-color: lightgrey;
+   
+}
+.section1 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color:darkgrey;
+    height:40px;
+   
+}
+.container1{
+    height:200px;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 20rem;
+}
+
+.card img{
+    height:155px
+}
+.card-title{
+    font-size: 15px;
+}
+.card p{
+    font-size: 15px;
+    display:inline;
+}
+
+.bottom{
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+}
+.btn{
+  height: 25px;
+  font-size: 15px;
+  padding-top: 2px;
+}
+.section2{
+    width:100vw;
+    height:280px;
+    position: relative;
+    top: 0px;
+    background-color: lightgray;
+    
+    
+}
+.section2 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color:darkgray;
+    height:40px;
+}
+.card p{
+    font-size: 15px;
+    display:inline;
+}
+.section3{
+    width:100vw;
+    height:280px;
+    position: relative;
+    top: 0px;
+    background-color: lightgray;
+    
+}
+
+.section3 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color:darkgray;
+    height:40px;
+    
+   
+}
+.card p{
+    font-size: 15px;
+    display:inline;
+}
+.section4{
+    width:100vw;
+    height:280px;
+    position: relative;
+    top: 0px;
+    background-color: lightgray;
+    
+}
+.section4 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color:darkgray;
+    height:40px;
+   
+}
+.card p{
+    font-size: 15px;
+    display:inline;
+}
+.section5{
+    width:100vw;
+    height:280px;
+    position: relative;
+    top: 0px;
+    background-color: lightgray;
+    
+}
+.section5 p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color:darkgray;
+    height:40px;
+   
+}
+.card p{
+    font-size: 15px;
+    display:inline;
+}
+.bottom p{
+    background-color:bisque;
+}
+
+
+@media (min-width: 350px) and (max-width:1100px) {
+    .section1{
+        width:100vw;
+        height:80vh;
+        background-color: lightgrey;
+        
+       
+    }
+    .section2{
+        width:100vw;
+        height:80vh;
+        position: relative;
+        background-color: lightgray;
+        
+        
+    }
+    .section3{
+        width:100vw;
+        height:80vh;
+        position: relative;
+        background-color: lightgray;
+        
+    }
+    .section4{
+        width:100vw;
+        height:80vh;
+        position: relative;
+        background-color: lightgray;
+        
+    }
+    .section5{
+        width:100vw;
+        height:80vh;
+        position: relative;
+        background-color: lightgray;
+        
+    }
+    .section1 p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        background-color:darkgrey;
+        height:20px;
+       
+    }
+    .section2 p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        background-color:darkgrey;
+        height:20px;
+       
+    }
+    .section3 p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        background-color:darkgrey;
+        height:20px;
+       
+    }
+    .section4 p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        background-color:darkgrey;
+        height:20px;
+       
+    }
+    .section5 p{
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 0px;
+        background-color:darkgrey;
+        height:20px;
+       
+    }
+    .container1{
+        display:flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        gap:2px;
+        flex-wrap: wrap;
+    }
+    
+    
+    .card-title{
+        font-size: 10px;
+    }
+    .card{
+        width: 10rem;
+    }
+    .card p{
+        font-size: 10px;
+        display:inline;
+    }
+    
+    .bottom{
+        height:25px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .btn{
+      height: 18px;
+      width:35px;
+      font-size: 10px;
+      padding-top: 2px;
+      padding-right: 8px;
+      padding: 0px;
+    }
+    .bottom p{
+        background-color:bisque;
+    }
+    
+}
