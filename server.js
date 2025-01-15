@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
 const db=require("./configuration/mongoose_connection");
-const bcrypt=require("bcrypt");
+const bcryptjs=require("bcryptjs");
 require("dotenv").config();
 const PORT=process.env.PORT || 3000;
 
