@@ -12,7 +12,7 @@ router.get("/login",(req,res)=>{
    return res.render("login")
 })
 router.get("/register",(req,res)=>{
-    res.render("Register")
+    res.render("register")
 })
 router.get("/homepage",(req,res)=>{
     res.render("homepage")
