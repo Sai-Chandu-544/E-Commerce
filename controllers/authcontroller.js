@@ -45,7 +45,7 @@ module.exports.loginuser = async (req, res) => {
     if (result) {
       let token = generatetoken(user);
       res.cookie("token", token);
-      return res.redirect("/homepage");
+      return res.redirect("homepage");
     } else {
       return res.status(401).send("Email or Password incorrect");
     }
