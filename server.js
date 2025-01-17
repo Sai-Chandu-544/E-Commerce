@@ -53,8 +53,6 @@ app.use("/products",product_router)
 app.use("/owners",owner_router)
 
 console.log(process.env.NODE_ENV);
-app.get("/",(req,res)=>{
-    res.send("Hi This is Home Page")
-})
+
 
 app.listen(PORT,()=>console.log("Server is Running"))
